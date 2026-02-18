@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julx!</title>
+    <link rel="icon" href="cat.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Section Home -->
+    <section id="home" class="home-section">
+        <canvas id="particlesCanvas"></canvas>
+        <div class="home-content section-content">
+            <h1 class="fade-in">Halo, Saya <span class="highlight">Fajrul Falah</span></h1>
+            <p class="tagline fade-in-delay">Web Developer | Network Engineer</p>
+            <a href="#project" class="btn fade-in-delay-2">See What I Built</a>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-wrapper section-content">
+                <div class="about-text">
+                    <p>Saya ngulik web dan jaringan, dari yang basic sampai yang ribet. Lebih suka solusi simpel tapi jalan, daripada keren tapi nyusahin.</p>
+                    <p>Saya terus belajar dan ngikutin perkembangan teknologi, bukan karena tren, tapi karena emang penasaran dan pengen makin jago.</p>
+                    <div class="social-links">
+                        <span class="social-label">Visit My Socials -></span>
+                        <a href="https://github.com/ajulx" target="_blank" class="social-icon github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/lemonkecuttttt" target="_blank" class="social-icon instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@4JULX" target="_blank" class="social-icon youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-photo">
+                    <div class="border-garis">
+                        <div class="photo-glow">
+                            <div class="photo-placeholder">
+                            <img src="halus.jpg" alt="foto-kece">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Skill -->
+    <section id="skill" class="skill-section">
+        <div class="container section-content">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skills-options">
+                    <button class="skill-option active" data-skill="networking">Networking</button>
+                    <button class="skill-option" data-skill="network-config">Network Device Configuration & Management</button>
+                    <button class="skill-option" data-skill="frontend">Frontend Web</button>
+                    <button class="skill-option" data-skill="architect">Architect Network Infrastructure</button>
+                </div>
+                <div class="skills-display">
+                    <div class="skill-content active" id="networking">
+                        <h3>Networking</h3>
+                        <p>Saya memiliki keahlian dalam membangun dan mengelola jaringan komputer, termasuk konfigurasi router, switch, firewall, dan keamanan jaringan. Pengalaman dalam jaringan LAN, MAN, dan VPN dengan berbagai topologi jaringan.</p>
+                    </div>
+                    <div class="skill-content" id="network-config">
+                        <h3>Network Device Configuration & Management</h3>
+                        <p>Mempunyai kemampuan dalam mengkonfigurasi dan mengelola perangkat jaringan seperti Cisco dan Mikrotik. Termasuk manajemen VLAN, STP, EtherChannel, Berbagai protokol routing, Serta trouble shooting perangkat jaringan.</p>
+                    </div>
+                    <div class="skill-content" id="frontend">
+                        <h3>Frontend Web</h3>
+                        <p>Membangun tampilan website modern dan responsif menggunakan HTML, CSS, JavaScript menggunakan ai agent dalam otomatisasi pembuatan website.</p>
+                    </div>
+                    <div class="skill-content" id="architect">
+                        <h3>Architect Network Infrastructure</h3>
+                        <p>Kemampuan merancang infrastruktur jaringan yang skalable dan aman untuk berbagai kebutuhan. Termasuk desain network topology, failover, load balancing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Project -->
+    <section id="project" class="project-section">
+        <div class="container section-content">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-wrapper">
+                <div class="projects-scroll">
+                    <div class="project-card active">
+                        <div class="project-image">
+                            <img src="gambar-projek/coding.jpg" alt="Project 1">
+                        </div>
+                        <h3>Membuat Website dengan AI</h3>
+                        <p>Membangun website modern dengan bantuan AI agent untuk otomatisasi development.</p>
+                        <a href="project-ai.html" target="_self" class="btn-small">View</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="gambar-projek/kota.jpg" alt="Project 2">
+                        </div>
+                        <h3>Membangun Jaringan</h3>
+                        <p>Merancang dan mengimplementasikan infrastruktur jaringan komputer skala kecil hingga menengah.</p>
+                        <a href="project-jaringan.html" target="_self" class="btn-small">View</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img class="server" src="gambar-projek/server.jpg" alt="Project 3">
+                        </div>
+                        <h3>Membangun Layanan pada Server</h3>
+                        <p>Mengembangkan dan mengelola berbagai layanan server termasuk web server, database, dan mail server.</p>
+                        <a href="project-server.html" target="_self" class="btn-small">View</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop" alt="Project 4">
+                        </div>
+                        <h3>Merancang Arsitektur Jaringan</h3>
+                        <p>Membuat desain topologi jaringan yang skalable, efisien, dan aman untuk kebutuhan bisnis.</p>
+                        <a href="project-arsitektur.html" target="_self" class="btn-small">View</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="gambar-projek/hacker.jpg" alt="Project 5">
+                        </div>
+                        <h3>Menjaga Keamanan Jaringan</h3>
+                        <p>Mengimplementasikan firewall, VPN, dan protokol keamanan untuk melindungi infrastruktur jaringan.</p>
+                        <a href="project-keamanan.html" target="_self" class="btn-small">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Downloads -->
+    <section id="downloads" class="downloads-section">
+        <div class="container section-content">
+            <h2 class="section-title">Downloads</h2>
+            <div class="downloads-wrapper">
+                <div class="downloads-options">
+                    <div class="downloads-scroll">
+                        <button class="download-option active" data-download="debian">Debian ISO</button>
+                        <button class="download-option" data-download="vmware-ws">VMware Workstation</button>
+                        <button class="download-option" data-download="vmware-player">VMware Player</button>
+                        <button class="download-option" data-download="virtualbox">Virtual Box</button>
+                        <button class="download-option" data-download="putty">Putty</button>
+                        <button class="download-option" data-download="vscode">VSCode</button>
+                        <button class="download-option" data-download="docker">Docker</button>
+                        <button class="download-option" data-download="winbox">Winbox</button>
+                        <button class="download-option" data-download="mikrotik-iso">Mikrotik ISO</button>
+                        <button class="download-option" data-download="proxmox-iso">Proxmox ISO</button>
+                        <button class="download-option" data-download="kali-linux-iso">Kali Linux ISO</button>
+                        <button class="download-option" data-download="packet-tracer">Cisco Packet Tracer</button>
+                    </div>
+                </div>
+                <div class="downloads-display">
+                    <div class="download-content active" id="debian">
+                        <h3>Debian ISO</h3>
+                        <p>File ISO sistem operasi Debian untuk instalasi server atau desktop. Debian dikenal stabil dan banyak digunakan sebagai dasar distribusi Linux lainnya. Untuk file ISO yang diunduh, masih ISO DVD 1, untuk mengunduh DVD ISO secara lengkap, silahakan kunjungi situs resmi Debian. <span class="situs-resmi"><a href="https://www.debian.org/" target="_blank"> situs resmi debian </a></span></p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Debian 13</span>
+                                <a href="https://get.debian.org/mirror/cdimage/archive/13.0.0/amd64/iso-dvd/debian-13.0.0-amd64-DVD-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Debian 12</span>
+                                <a href="https://cdimage.debian.org/cdimage/archive/12.12.0/source/iso-dvd/debian-12.12.0-source-DVD-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Debian 11</span>
+                                <a href="https://cdimage.debian.org/cdimage/archive/11.9.0/source/iso-dvd/debian-11.9.0-source-DVD-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="vmware-ws">
+                        <h3>VMware Workstation pro</h3>
+                        <p>Software virtualisasi profesional untuk membuat dan mengelola mesin virtual. Mendukung berbagai sistem operasi dan fitur advanced lainnya. Anda secara otomatis bakal di arahkan ke website resmi VMware untuk mengunduh.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>VMware Workstation v.17.6.4</span>
+                                <a href="https://www.techspot.com/downloads/downloadnow/189/?evp=f14a48a23bc560f5fbe81b8d83387b41&file=241" target="_blank" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>VMware Workstation v.25H2</span>
+                                <a href="https://www.techspot.com/downloads/downloadnow/189/?evp=f14a48a23bc560f5fbe81b8d83387b41&file=12520" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="vmware-player">
+                        <h3>VMware Player</h3>
+                        <p>Versi gratis dari VMware untuk menjalankan mesin virtual yang sudah ada. Cocok untuk pengguna yang hanya perlu menjalankan VM.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>VMware Player v.17</span>
+                                <a href="https://www.techspot.com/downloads/downloadnow/1969/?evp=aeae0304eece96beff922bd24ecbb849&file=11743" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="virtualbox">
+                        <h3>Virtual Box</h3>
+                        <p>Software virtualisasi open-source dari Oracle. Gratis dan mendukung berbagai sistem operasi guest.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Virtual Box v.6.1.38</span>
+                                <a href="https://en.softonic.com/download/virtualbox/windows/post-download/v/6.1.38#google_vignette" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Virtual Box v.7.2.0</span>
+                                <a href="https://en.softonic.com/download/virtualbox/windows/post-download/v/7.2.0" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="putty">
+                        <h3>Putty</h3>
+                        <p>Client SSH dan Telnet gratis untuk mengakses server remote. Sangat populer di kalangan administrator jaringan.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Putty 64bit</span>
+                                <a href="https://puttygen.com/download.php?val=4" target="_blank" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Putty 64bit x86</span>
+                                <a href="https://puttygen.com/download.php?val=64" target="_blank" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Putty 32bit</span>
+                                <a href="https://puttygen.com/download.php?val=1" target="_blank" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="vscode">
+                        <h3>VSCode</h3>
+                        <p>Editor kode sumber yang powerful dan gratis dari Microsoft. Mendukung berbagai bahasa pemrograman dan ekstensi.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>VSCode</span>
+                                <a href="https://code.visualstudio.com/docs/?dv=win64user" target="_blank" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="docker">
+                        <h3>Docker</h3>
+                        <p>Platform containerization untuk mengembangkan, mengirim, dan menjalankan aplikasi dalam container. Memudahkan deployment aplikasi.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Docker</span>
+                                <a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-win-amd64&_gl=1*18xf9px*_gcl_au*MjAxMTgyODU5NC4xNzY3MTMwMjQw*_ga*MTg4NDkwOTM3MS4xNzY3MTMwMjQx*_ga_XJWPQMJYHQ*czE3NzEzMjg4MTAkbzMkZzEkdDE3NzEzMjg4NTckajEzJGwwJGgw" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="winbox">
+                        <h3>Winbox</h3>
+                        <p>Aplikasi manajemen untuk RouterOS Mikrotik. Menyediakan interface GUI untuk mengkonfigurasi router Mikrotik.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Winbox v3.43 64bit</span>
+                                <a href="https://download.mikrotik.com/routeros/winbox/3.43/winbox64.exe" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Winbox v3.43 32bit</span>
+                                <a href="https://download.mikrotik.com/routeros/winbox/3.43/winbox.exe" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Winbox v.4.0.1</span>
+                                <a href="https://download.mikrotik.com/routeros/winbox/4.0.1/WinBox_Windows.zip" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="mikrotik-iso">
+                        <h3>Mikrotik ISO</h3>
+                        <p>File ISO RouterOS dari Mikrotik untuk instalasi router dengan fitur routing, firewall, VPN, dan manajemen bandwidth.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Mikrotik v.6.49.19 X86</span>
+                                <a href="https://download.mikrotik.com/routeros/6.49.19/mikrotik-6.49.19.iso" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Mikrotik v.7.20.8 X86</span>
+                                <a href="https://download.mikrotik.com/routeros/7.20.8/mikrotik-7.20.8.iso" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="proxmox-iso">
+                        <h3>Proxmox ISO</h3>
+                        <p>Platform virtualisasi open-source berbasis Debian. Menggabungkan KVM hypervisor dan container virtualization dalam satu solusi. Silahkan kunjungi situs resmi Proxmox jika anda ingin sistem operasi yang anda butuhkan. <span><a href="https://www.proxmox.com/en/downloads"> situs resmi proxmox</a></span></p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Proxmox v.6.4</span>
+                                <a href="https://www.proxmox.com/images/download/pve/iso/proxmox-ve_6.4-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Proxmox v.7.4</span>
+                                <a href="https://enterprise.proxmox.com/iso/proxmox-ve_7.4-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Proxmox v.8.4</span>
+                                <a href="https://enterprise.proxmox.com/iso/proxmox-ve_8.4-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Proxmox v.9.1</span>
+                                <a href="https://enterprise.proxmox.com/iso/proxmox-ve_9.1-1.iso" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="kali-linux-iso">
+                        <h3>Kali Linux ISO</h3>
+                        <p>Distribusi Linux khusus untuk penetration testing dan security auditing. Dilengkapi dengan berbagai tools keamanan.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Kali Linux v.2025.4 (for vmware)</span>
+                                <a href="https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-vmware-amd64.7z" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Kali Linux v.2025.4 (for virtualbox)</span>
+                                <a href="https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-virtualbox-amd64.7z" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Kali Linux v.2025.4 (for PC)</span>
+                                <a href="https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-amd64.iso" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-content" id="packet-tracer">
+                        <h3>Cisco Packet Tracer</h3>
+                        <p>Software simulasi jaringan dari Cisco untuk belajar routing, switching, dan konfigurasi perangkat jaringan.</p>
+                        <div class="download-items">
+                            <div class="download-item">
+                                <span>Cisco Packet Tracer v.7 64bit</span>
+                                <a href="https://www.filehorse.com/download/file/ph421UwKMAMEhMdN9Uoj05Qsw4-VBciAmmK05eFXd6Zvd2aQUl3dK7Ss9idUMzr-6r9KHUtJzHuh4v507xjKhmNY0Ue1pqaT_TPJQedcDNs/" class="btn-download-small">Download</a>
+                            </div>
+                            <div class="download-item">
+                                <span>Cisco Packet Tracer v.8.2.2 64bit</span>
+                                <a href="https://packet-tracer.emuapps.com/download/62" class="btn-download-small">Download</a>
+                            </div>
+                             <div class="download-item">
+                                <span>Cisco Packet Tracer v.8.2.2 32bit</span>
+                                <a href="https://packet-tracer.emuapps.com/download/63" class="btn-download-small">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 website portofolio 4JULX. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
